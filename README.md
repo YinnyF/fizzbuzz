@@ -2,13 +2,13 @@
 
 A Makers pre-course week 4 challenge that introduces Test Driven Development (TDD) and Pair Programming.
 
-**Languages used**: Ruby
-**Testing frameworks**: RSpec
+* **Languages used**: Ruby
+* **Testing frameworks**: RSpec
 
 ## Gems Required
 
-### RSpec
-Rspec gem
+### RSpec Gem
+RSpec
 ```
 gem install rspec
 ```
