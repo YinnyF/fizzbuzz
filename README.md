@@ -7,16 +7,29 @@ A Makers pre-course week 4 challenge that introduces Test Driven Development (TD
 
 ## Gems Required
 
-RSpec
+### RSpec
+Rspec gem
 ```
 gem install rspec
+```
+
+RSpec options
+```
+rspec --h
 ```
 
 
 ## Instructions
 
-* Work through the challenge with a pair partner. 
+* Work through the challenge using a TDD approach with a pair partner. 
 * Take turns to drive/navigate, swapping every 15 mins.
+* Write a failing test (RED) - describe a single expectation of the program. 
+* Write the simplest code possible to pass the test (GREEN)
+* Clean up (REFACTOR): tidy up and ensure tests still pass without adding any additional functionality.
+* Repeat RED - GREEN - REFACTOR
+* Satisfy the TDD objectives:
+    1. Write production code that fully meets the expectation of our tests.
+    2. Write tests that fully meet the specification of the program.
 
 
 ## FizzBuzz Challenge Specification
@@ -59,7 +72,7 @@ true
 
 From irb require the fizzbuzz.rb file.
 ``` 
-require ./lib/fizzbuzz.rb
+require './lib/fizzbuzz'
 ```
 
 To get a fizzbuzz number:
@@ -67,14 +80,23 @@ To get a fizzbuzz number:
 fizzbuzz(x)
 ```
 
-## How to run tests
+To run FizzBuzz for all numbers from 1 to 100:
+```
+(1..100).each {|number| puts "#{number} --> #{fizzbuzz(number)}"}
+```
 
-Describe how to run tests using RSpec here.
+To run the RSpec tests in the command line type:
+```
+rspec
+```
 
 
 ## Files
 
 | File    | Description |
 | ----------- | ----------- |
-| fizzbuzz.rb  | something    |
-| fizzbuzz_spec.rb  | RSpec file |
+| .rspec  | This file was generated when initialising RSpec |
+| ./lib/fizzbuzz.rb  | The fizzbuzz program  |
+| ./spec/fizzbuzz_spec.rb  | The RSpec file containing all the tests scenarios for fizzbuzz.rb |
+| ./spec/spec_helper.rb | This file was generated when initialising RSpec |
+
